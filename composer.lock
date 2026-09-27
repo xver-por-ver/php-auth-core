@@ -3444,16 +3444,16 @@
         },
         {
             "name": "xver/php-app-core",
-            "version": "1.0.13",
+            "version": "1.0.14",
             "source": {
                 "type": "git",
-                "url": "https://github.com/sgurdiel/php-app-core.git",
-                "reference": "09b88967d4787a6721e550aba24bafacf14073f4"
+                "url": "https://github.com/xver-por-ver/php-app-core.git",
+                "reference": "9e649b0e65048cc4fdcd56911a06b47931c62a02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sgurdiel/php-app-core/zipball/09b88967d4787a6721e550aba24bafacf14073f4",
-                "reference": "09b88967d4787a6721e550aba24bafacf14073f4",
+                "url": "https://api.github.com/repos/xver-por-ver/php-app-core/zipball/9e649b0e65048cc4fdcd56911a06b47931c62a02",
+                "reference": "9e649b0e65048cc4fdcd56911a06b47931c62a02",
                 "shasum": ""
             },
             "require": {
@@ -3480,10 +3480,10 @@
             ],
             "description": "Provides a PHP skeleton for developing new apps",
             "support": {
-                "issues": "https://github.com/sgurdiel/php-app-core/issues",
-                "source": "https://github.com/sgurdiel/php-app-core/tree/1.0.13"
+                "issues": "https://github.com/xver-por-ver/php-app-core/issues",
+                "source": "https://github.com/xver-por-ver/php-app-core/tree/1.0.14"
             },
-            "time": "2026-09-22T15:38:43+00:00"
+            "time": "2026-09-27T16:12:25+00:00"
         }
     ],
     "packages-dev": [
