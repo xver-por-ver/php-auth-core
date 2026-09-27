@@ -1,18 +1,7 @@
-name: PHPUnit test & Static code analysis
+name: Application Quality Assurance
 
 on:
-  push:
-    branches: [ "main" ]
-    paths-ignore:
-      - '**.md'
-      - LICENSE
-      - 'translations/**'
-  pull_request:
-    branches: [ "main" ]
-    paths-ignore:
-      - '**.md'
-      - LICENSE
-      - 'translations/**'
+  workflow_call:
 
 env:
   XDEBUG_MODE: coverage
@@ -22,7 +11,7 @@ permissions:
 
 jobs:
   build:
-    name: php-auth-core
+    name: Install, Build, Test and Analyze
 
     runs-on: ubuntu-latest
 
