@@ -145,8 +145,8 @@ class Account implements AccountInterface
     {
         $repoAccount = $this->accountPersistence->getRepository();
         $this->validateIdentifierUniqueness($repoAccount);
-        $repoAccount->persist($this);
-        $repoAccount->flush();
+        $this->accountPersistence->persist($this);
+        $this->accountPersistence->flush();
     }
 
     protected function validateIdentifierUniqueness(AccountRepositoryInterface $repoAccount): void
