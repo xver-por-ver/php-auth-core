@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6efb9deac442ab831a5a72b228e98a36",
+    "content-hash": "649a37854403edf2dd68669806c22d82",
     "packages": [
         {
             "name": "doctrine/collections",
@@ -3444,16 +3444,16 @@
         },
         {
             "name": "xver/php-app-core",
-            "version": "1.0.18",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/xver-por-ver/php-app-core.git",
-                "reference": "c7cedb06bfd0ceffb1bb45ecb1ef3b16f2e62cab"
+                "reference": "2aa37eb6bcd623dfb4f2bac50b1adb5d63766fa3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xver-por-ver/php-app-core/zipball/c7cedb06bfd0ceffb1bb45ecb1ef3b16f2e62cab",
-                "reference": "c7cedb06bfd0ceffb1bb45ecb1ef3b16f2e62cab",
+                "url": "https://api.github.com/repos/xver-por-ver/php-app-core/zipball/2aa37eb6bcd623dfb4f2bac50b1adb5d63766fa3",
+                "reference": "2aa37eb6bcd623dfb4f2bac50b1adb5d63766fa3",
                 "shasum": ""
             },
             "require": {
@@ -3481,9 +3481,9 @@
             "description": "Provides a PHP skeleton for developing new apps",
             "support": {
                 "issues": "https://github.com/xver-por-ver/php-app-core/issues",
-                "source": "https://github.com/xver-por-ver/php-app-core/tree/1.0.18"
+                "source": "https://github.com/xver-por-ver/php-app-core/tree/2.0.0"
             },
-            "time": "2026-09-28T17:14:16+00:00"
+            "time": "2026-09-29T15:53:34+00:00"
         }
     ],
     "packages-dev": [
