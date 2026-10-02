@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/13.4/phpunit.xsd"
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
          bootstrap="tests/bootstrap.php"
          colors="true"
          cacheDirectory="dev-tools/.phpunit.cache"
          defaultTestSuite="unit"
-         executionOrder="defects"
+         executionOrder="depends,defects"
          beStrictAboutCoverageMetadata="true"
          beStrictAboutOutputDuringTests="true"
          displayDetailsOnPhpunitDeprecations="true"
@@ -18,10 +18,12 @@
          failOnRisky="true"
          failOnWarning="true"
          requireCoverageMetadata="true"
-         resolveDependencies="true"
 >
   <testsuites>
     <testsuite name="unit">
+      <directory>tests/unit</directory>
+    </testsuite>
+    <testsuite name="all">
       <directory>tests/unit</directory>
     </testsuite>
   </testsuites>
@@ -35,4 +37,14 @@
       <file>src/Kernel.php</file>
     </exclude>
   </source>
+  <coverage>
+    <report>
+      <clover outputFile="dev-tools/.reports/coverage/clover.xml"/>
+      <html outputDirectory="../dev-reports/devbox.d/web/coverage/php-auth-core"/>
+      <xml outputDirectory="dev-tools/.reports/coverage/coverage-xml"/>
+    </report>
+  </coverage>
+  <logging>
+    <junit outputFile="dev-tools/.reports/coverage/junit.xml"/>
+  </logging>
 </phpunit>
