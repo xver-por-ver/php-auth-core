@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/13.4/phpunit.xsd"
          bootstrap="tests/bootstrap.php"
          colors="true"
          cacheDirectory="dev-tools/.phpunit.cache"
          defaultTestSuite="unit"
-         executionOrder="depends,defects"
+         executionOrder="defects"
          beStrictAboutCoverageMetadata="true"
          beStrictAboutOutputDuringTests="true"
          displayDetailsOnPhpunitDeprecations="true"
@@ -14,16 +14,14 @@
          displayDetailsOnTestsThatTriggerErrors="true"
          displayDetailsOnTestsThatTriggerNotices="true"
          displayDetailsOnTestsThatTriggerWarnings="true"
-         failOnPhpunitDeprecation="false"
+         failOnPhpunitDeprecation="true"
          failOnRisky="true"
          failOnWarning="true"
          requireCoverageMetadata="true"
+         resolveDependencies="true"
 >
   <testsuites>
     <testsuite name="unit">
-      <directory>tests/unit</directory>
-    </testsuite>
-    <testsuite name="all">
       <directory>tests/unit</directory>
     </testsuite>
   </testsuites>
