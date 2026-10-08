@@ -2,12 +2,12 @@
   "lockfile_version": "1",
   "packages": {
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
-      "last_modified": "2026-07-18T08:47:58Z",
-      "resolved": "github:NixOS/nixpkgs/20535e48e12c86043b577b8518234ff5dbb26957?lastModified=1784364478&narHash=sha256-CdItYNdYUlm7NxqMVyQKqT2IxTwvapiPuRLWOyHTrbY%3D"
+      "last_modified": "2026-10-03T07:08:11Z",
+      "resolved": "github:NixOS/nixpkgs/73e728ddb6b7a12d18808f510813a13ee1fe4cce?lastModified=1791011291&narHash=sha256-V6OBJccNKBo%2FktknxlJXZChPoI0NE2lembArBO3CE9k%3D"
     },
     "php85Extensions.xdebug@3.5.3": {
-      "last_modified": "2026-07-08T21:13:06Z",
-      "resolved": "github:NixOS/nixpkgs/389ed85304b281ca7f306cf8a1eb4378651ca44e#php85Extensions.xdebug",
+      "last_modified": "2026-10-02T22:55:44Z",
+      "resolved": "github:NixOS/nixpkgs/55ba7f49ef2962b42cbd126522b7df5f95037679#php85Extensions.xdebug",
       "source": "devbox-search",
       "version": "3.5.3",
       "systems": {
@@ -15,21 +15,21 @@
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/rdz9316aqjzgir9v829m4l3jnmfbxq3h-php-xdebug-3.5.3",
+              "path": "/nix/store/h2b3sz5irbi976bq0asbanvxvfql22d6-php-xdebug-3.5.3",
               "default": true
             }
           ],
-          "store_path": "/nix/store/rdz9316aqjzgir9v829m4l3jnmfbxq3h-php-xdebug-3.5.3"
+          "store_path": "/nix/store/h2b3sz5irbi976bq0asbanvxvfql22d6-php-xdebug-3.5.3"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/gz837ijdc4x62p4vbp309qlj3kznm16m-php-xdebug-3.5.3",
+              "path": "/nix/store/l4nrlnspswi1qqfsfwg6hg4f415g65fg-php-xdebug-3.5.3",
               "default": true
             }
           ],
-          "store_path": "/nix/store/gz837ijdc4x62p4vbp309qlj3kznm16m-php-xdebug-3.5.3"
+          "store_path": "/nix/store/l4nrlnspswi1qqfsfwg6hg4f415g65fg-php-xdebug-3.5.3"
         },
         "x86_64-darwin": {
           "outputs": [
@@ -45,11 +45,11 @@
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/p2xj786bqf7l3r8szihi1l8i6lkyp6ba-php-xdebug-3.5.3",
+              "path": "/nix/store/5fdw48qya3yl4jm8a1dnqzdhivl7dpdv-php-xdebug-3.5.3",
               "default": true
             }
           ],
-          "store_path": "/nix/store/p2xj786bqf7l3r8szihi1l8i6lkyp6ba-php-xdebug-3.5.3"
+          "store_path": "/nix/store/5fdw48qya3yl4jm8a1dnqzdhivl7dpdv-php-xdebug-3.5.3"
         }
       }
     },
