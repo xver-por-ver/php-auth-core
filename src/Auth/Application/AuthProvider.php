@@ -1,6 +1,8 @@
 <?php
 
-namespace Xver\SymfonyAuthBundle\Auth\Application;
+declare(strict_types=1);
+
+namespace Xver\PhpAuthCoreBundle\Auth\Application;
 
 use Symfony\Component\Security\Core\Exception\AuthenticationServiceException;
 use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
@@ -10,8 +12,8 @@ use Symfony\Component\Security\Core\User\PasswordUpgraderInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Core\User\UserProviderInterface;
 use Xver\PhpAppCoreBundle\Entity\Domain\EntityNotFoundException;
-use Xver\SymfonyAuthBundle\Account\Application\Query\AccountQueryInterface;
-use Xver\SymfonyAuthBundle\Auth\Domain\AuthUser;
+use Xver\PhpAuthCoreBundle\Account\Application\Query\AccountQueryInterface;
+use Xver\PhpAuthCoreBundle\Auth\Domain\AuthUser;
 
 /**
  * @template-implements UserProviderInterface<UserInterface>

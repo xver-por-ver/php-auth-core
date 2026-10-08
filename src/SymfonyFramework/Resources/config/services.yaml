@@ -3,9 +3,9 @@ services:
         autowire: true      
         autoconfigure: true
 
-    Xver\SymfonyAuthBundle\:
+    Xver\PhpAuthCoreBundle\:
         resource: '../../../'
         exclude:
             - '../../../SymfonyFramework/'
             - '../../../Kernel.php'
-            - '../../../SymfonyAuthBundle.php'
+            - '../../../PhpAuthCoreBundle.php'

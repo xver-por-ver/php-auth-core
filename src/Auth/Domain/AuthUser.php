@@ -1,6 +1,8 @@
 <?php
 
-namespace Xver\SymfonyAuthBundle\Auth\Domain;
+declare(strict_types=1);
+
+namespace Xver\PhpAuthCoreBundle\Auth\Domain;
 
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;

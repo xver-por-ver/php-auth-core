@@ -1,6 +1,8 @@
 <?php
 
-namespace Xver\SymfonyAuthBundle\Account\Interface\Web\Form;
+declare(strict_types=1);
+
+namespace Xver\PhpAuthCoreBundle\Account\Interface\Web\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
@@ -24,7 +26,7 @@ class ResetPasswordFormType extends AbstractType
                 'invalid_message' => new TranslatableMessage(
                     'errorPasswordsDifferent',
                     [],
-                    'SymfonyAuthBundle'
+                    'PhpAuthCoreBundle'
                 ),
                 'options' => ['attr' => ['class' => 'password-field']],
                 'required' => true,
@@ -33,7 +35,7 @@ class ResetPasswordFormType extends AbstractType
                     'label' => new TranslatableMessage(
                         'newPassword',
                         [],
-                        'SymfonyAuthBundle'
+                        'PhpAuthCoreBundle'
                     ),
                     'attr' => ['autocomplete' => 'new-password'],
                     'constraints' => [
@@ -44,7 +46,7 @@ class ResetPasswordFormType extends AbstractType
                 'second_options' => ['label' => new TranslatableMessage(
                     'reenterPassword',
                     [],
-                    'SymfonyAuthBundle'
+                    'PhpAuthCoreBundle'
                 )],
             ])
         ;

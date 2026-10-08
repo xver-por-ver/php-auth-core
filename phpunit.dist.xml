@@ -29,10 +29,5 @@
     <include>
       <directory suffix=".php">src</directory>
     </include>
-    <exclude>
-      <directory>src/SymfonyFramework</directory>
-      <file>src/SymfonyAuthBundle.php</file>
-      <file>src/Kernel.php</file>
-    </exclude>
   </source>
 </phpunit>

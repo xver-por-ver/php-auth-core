@@ -1,6 +1,8 @@
 <?php
 
-namespace Xver\SymfonyAuthBundle\Account\Interface\Web\Form;
+declare(strict_types=1);
+
+namespace Xver\PhpAuthCoreBundle\Account\Interface\Web\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
@@ -22,7 +24,7 @@ class RequestRecoverPasswordFormType extends AbstractType
                 'label' => new TranslatableMessage(
                     'email',
                     [],
-                    'SymfonyAuthBundle'
+                    'PhpAuthCoreBundle'
                 ),
                 'required' => true,
                 'constraints' => [

@@ -1,6 +1,6 @@
 <?php
 
-use Xver\SymfonyAuthBundle\Kernel;
+use Xver\PhpAuthCoreBundle\Kernel;
 
 require_once dirname(__DIR__).'/vendor/autoload_runtime.php';
 

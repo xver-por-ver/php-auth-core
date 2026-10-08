@@ -1,6 +1,8 @@
 <?php
 
-namespace Xver\SymfonyAuthBundle\Account\Domain;
+declare(strict_types=1);
+
+namespace Xver\PhpAuthCoreBundle\Account\Domain;
 
 use Xver\PhpAppCoreBundle\Entity\Domain\EntityNotFoundException;
 use Xver\PhpAppCoreBundle\Entity\Domain\EntityRepositoryInterface;

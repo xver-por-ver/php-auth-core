@@ -16,12 +16,12 @@ services:
 
     # makes classes in src/ available to be used as services
     # this creates a service per class whose id is the fully-qualified class name
-    Xver\SymfonyAuthBundle\:
+    Xver\PhpAuthCoreBundle\:
         resource: '../src/'
         exclude:
             - '../src/SymfonyFramework/'
             - '../src/Kernel.php'
-            - '../src/SymfonyAuthBundle.php'
+            - '../src/PhpAuthCoreBundle.php'
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones

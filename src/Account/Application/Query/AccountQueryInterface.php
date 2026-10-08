@@ -1,8 +1,10 @@
 <?php
 
-namespace Xver\SymfonyAuthBundle\Account\Application\Query;
+declare(strict_types=1);
 
-use Xver\SymfonyAuthBundle\Account\Domain\AccountInterface;
+namespace Xver\PhpAuthCoreBundle\Account\Application\Query;
+
+use Xver\PhpAuthCoreBundle\Account\Domain\AccountInterface;
 
 interface AccountQueryInterface
 {
