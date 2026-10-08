@@ -1,6 +1,8 @@
 <?php
 
-namespace Xver\SymfonyAuthBundle\Tests\unit\Auth\Application;
+declare(strict_types=1);
+
+namespace Xver\PhpAuthCoreBundle\Tests\unit\Auth\Application;
 
 use PHPUnit\Framework\Attributes\AllowMockObjectsWithoutExpectations;
 use PHPUnit\Framework\Attributes\CoversClass;
@@ -11,10 +13,10 @@ use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
 use Symfony\Component\Security\Core\Exception\UserNotFoundException;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Xver\PhpAppCoreBundle\Entity\Domain\EntityNotFoundException;
-use Xver\SymfonyAuthBundle\Account\Application\Query\AccountQueryInterface;
-use Xver\SymfonyAuthBundle\Account\Domain\Account;
-use Xver\SymfonyAuthBundle\Auth\Application\AuthProvider;
-use Xver\SymfonyAuthBundle\Auth\Domain\AuthUser;
+use Xver\PhpAuthCoreBundle\Account\Application\Query\AccountQueryInterface;
+use Xver\PhpAuthCoreBundle\Account\Domain\Account;
+use Xver\PhpAuthCoreBundle\Auth\Application\AuthProvider;
+use Xver\PhpAuthCoreBundle\Auth\Domain\AuthUser;
 
 /**
  * @internal

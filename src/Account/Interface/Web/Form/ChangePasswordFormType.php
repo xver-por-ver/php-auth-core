@@ -1,6 +1,8 @@
 <?php
 
-namespace Xver\SymfonyAuthBundle\Account\Interface\Web\Form;
+declare(strict_types=1);
+
+namespace Xver\PhpAuthCoreBundle\Account\Interface\Web\Form;
 
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -21,7 +23,7 @@ class ChangePasswordFormType extends ResetPasswordFormType
                 'label' => new TranslatableMessage(
                     'email',
                     [],
-                    'SymfonyAuthBundle'
+                    'PhpAuthCoreBundle'
                 ),
                 'required' => true,
                 'mapped' => false,
@@ -32,21 +34,22 @@ class ChangePasswordFormType extends ResetPasswordFormType
                 'invalid_message' => new TranslatableMessage(
                     'errorPasswordsDifferent',
                     [],
-                    'SymfonyAuthBundle'
+                    'PhpAuthCoreBundle'
                 ),
                 'required' => true,
                 'mapped' => false,
                 'label' => new TranslatableMessage(
                     'currentPassword',
                     [],
-                    'SymfonyAuthBundle'
+                    'PhpAuthCoreBundle'
                 ),
                 'attr' => ['autocomplete' => 'new-password'],
                 'constraints' => [
                     new NotBlank(),
                     new Length(null, 8, 200),
                 ],
-            ]);
+            ])
+        ;
         parent::buildForm($builder, $options);
     }
 }

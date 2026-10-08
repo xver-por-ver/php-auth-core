@@ -1,12 +1,14 @@
 <?php
 
-namespace Xver\SymfonyAuthBundle;
+declare(strict_types=1);
+
+namespace Xver\PhpAuthCoreBundle;
 
 use Symfony\Component\DependencyInjection\Extension\ExtensionInterface;
 use Symfony\Component\DependencyInjection\Kernel\AbstractBundle;
-use Xver\SymfonyAuthBundle\SymfonyFramework\DependencyInjection\SymfonyAuthBundleExtension;
+use Xver\PhpAuthCoreBundle\SymfonyFramework\DependencyInjection\PhpAuthCoreBundleExtension;
 
-final class SymfonyAuthBundle extends AbstractBundle
+final class PhpAuthCoreBundle extends AbstractBundle
 {
     #[\Override]
     public function getPath(): string
@@ -18,7 +20,7 @@ final class SymfonyAuthBundle extends AbstractBundle
     public function getContainerExtension(): ?ExtensionInterface
     {
         if (null === $this->extension) {
-            $this->extension = new SymfonyAuthBundleExtension();
+            $this->extension = new PhpAuthCoreBundleExtension();
         }
 
         return $this->extension ?: null;

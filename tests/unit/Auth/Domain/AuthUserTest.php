@@ -1,10 +1,12 @@
 <?php
 
-namespace Xver\SymfonyAuthBundle\Tests\unit\Auth\Domain;
+declare(strict_types=1);
+
+namespace Xver\PhpAuthCoreBundle\Tests\unit\Auth\Domain;
 
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\TestCase;
-use Xver\SymfonyAuthBundle\Auth\Domain\AuthUser;
+use Xver\PhpAuthCoreBundle\Auth\Domain\AuthUser;
 
 /**
  * @internal

@@ -1,6 +1,8 @@
 <?php
 
-namespace Xver\SymfonyAuthBundle\Tests\unit\Account\Interface\Web\Form;
+declare(strict_types=1);
+
+namespace Xver\PhpAuthCoreBundle\Tests\unit\Account\Interface\Web\Form;
 
 use PHPUnit\Framework\Attributes\AllowMockObjectsWithoutExpectations;
 use PHPUnit\Framework\Attributes\CoversClass;
@@ -9,7 +11,7 @@ use Symfony\Component\Form\Test\TypeTestCase;
 use Symfony\Component\Validator\ConstraintViolationList;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
-use Xver\SymfonyAuthBundle\Account\Interface\Web\Form\ResetPasswordFormType;
+use Xver\PhpAuthCoreBundle\Account\Interface\Web\Form\ResetPasswordFormType;
 
 /**
  * @internal

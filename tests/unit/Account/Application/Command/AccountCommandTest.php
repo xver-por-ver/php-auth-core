@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Xver\SymfonyAuthBundle\Tests\unit\Account\Application\Command;
+namespace Xver\PhpAuthCoreBundle\Tests\unit\Account\Application\Command;
 
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\UsesClass;
 use PHPUnit\Framework\MockObject\Stub;
 use PHPUnit\Framework\TestCase;
 use Xver\PhpAppCoreBundle\Exception\Domain\DomainViolationException;
-use Xver\SymfonyAuthBundle\Account\Application\Command\AccountCommand;
-use Xver\SymfonyAuthBundle\Account\Domain\Account;
-use Xver\SymfonyAuthBundle\Account\Domain\AccountPersistenceInterface;
-use Xver\SymfonyAuthBundle\Account\Domain\AccountRepositoryInterface;
+use Xver\PhpAuthCoreBundle\Account\Application\Command\AccountCommand;
+use Xver\PhpAuthCoreBundle\Account\Domain\Account;
+use Xver\PhpAuthCoreBundle\Account\Domain\AccountPersistenceInterface;
+use Xver\PhpAuthCoreBundle\Account\Domain\AccountRepositoryInterface;
 
 /**
  * @internal
@@ -54,8 +54,8 @@ class AccountCommandTest extends TestCase
     {
         $command = new AccountCommand($this->accountPersistence);
         $this->expectException(DomainViolationException::class);
-        $this->expectExceptionMessage('invalidEmail');
-        $account = $command->create(
+        $this->expectExceptionMessageIs('invalidEmail');
+        $command->create(
             'invalidemail',
             self::$password,
             self::$roles

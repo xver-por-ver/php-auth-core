@@ -1,6 +1,8 @@
 <?php
 
-namespace Xver\SymfonyAuthBundle\Account\Interface\Web\Form;
+declare(strict_types=1);
+
+namespace Xver\PhpAuthCoreBundle\Account\Interface\Web\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
@@ -28,7 +30,7 @@ class RegistrationFormType extends AbstractType
                 'label' => new TranslatableMessage(
                     'email',
                     [],
-                    'SymfonyAuthBundle'
+                    'PhpAuthCoreBundle'
                 ),
                 'required' => true,
                 'constraints' => [
@@ -41,7 +43,7 @@ class RegistrationFormType extends AbstractType
                 'invalid_message' => new TranslatableMessage(
                     'errorPasswordsDifferent',
                     [],
-                    'SymfonyAuthBundle'
+                    'PhpAuthCoreBundle'
                 ),
                 'options' => [
                     'attr' => [
@@ -53,7 +55,7 @@ class RegistrationFormType extends AbstractType
                     'label' => new TranslatableMessage(
                         'password',
                         [],
-                        'SymfonyAuthBundle'
+                        'PhpAuthCoreBundle'
                     ),
                     'constraints' => [
                         new NotBlank(),
@@ -63,7 +65,7 @@ class RegistrationFormType extends AbstractType
                 'second_options' => ['label' => new TranslatableMessage(
                     'reenterPassword',
                     [],
-                    'SymfonyAuthBundle'
+                    'PhpAuthCoreBundle'
                 )],
             ])
             ->add('agreeTerms', CheckboxType::class, [
@@ -72,11 +74,13 @@ class RegistrationFormType extends AbstractType
                 'translation_domain' => false,
                 'required' => true,
                 'constraints' => [
-                    new IsTrue(null, (new TranslatableMessage(
+                    new IsTrue(
+                        null,
+                        new TranslatableMessage(
                             'mustAgreeTerms',
                             [],
-                            'SymfonyAuthBundle'
-                        ))->getMessage(),
+                            'PhpAuthCoreBundle'
+                        )->getMessage(),
                     ),
                 ],
             ])

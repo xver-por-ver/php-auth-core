@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Xver\SymfonyAuthBundle\Tests\unit\Account\Domain;
+namespace Xver\PhpAuthCoreBundle\Tests\unit\Account\Domain;
 
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -11,9 +11,9 @@ use PHPUnit\Framework\TestCase;
 use Symfony\Component\Uid\Uuid;
 use Xver\PhpAppCoreBundle\Entity\Domain\EntityInterface;
 use Xver\PhpAppCoreBundle\Exception\Domain\DomainViolationException;
-use Xver\SymfonyAuthBundle\Account\Domain\Account;
-use Xver\SymfonyAuthBundle\Account\Domain\AccountPersistenceInterface;
-use Xver\SymfonyAuthBundle\Account\Domain\AccountRepositoryInterface;
+use Xver\PhpAuthCoreBundle\Account\Domain\Account;
+use Xver\PhpAuthCoreBundle\Account\Domain\AccountPersistenceInterface;
+use Xver\PhpAuthCoreBundle\Account\Domain\AccountRepositoryInterface;
 
 /**
  * @internal

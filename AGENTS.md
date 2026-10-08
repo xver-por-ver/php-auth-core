@@ -80,9 +80,15 @@ Three specifics worth spelling out, because they are easy to get wrong:
 
 ## Testing
 
+This project's PHP runtime is provided by Devbox. If `php` or other project tools
+are missing from the shell, run them inside the project environment with
+`devbox run -- <command>`; don't assume the host has PHP installed. For example,
+run tests with `devbox run -- php bin/phpunit` (or
+`devbox run -- vendor/bin/phpunit`) and check the runtime with
+`devbox run -- php -v`.
+
 Install `symfony/test-pack` if it isn't already. Functional/HTTP tests extend
-`WebTestCase`; service-level tests extend `KernelTestCase`. Run
-`php bin/phpunit` (falls back to `vendor/bin/phpunit`). A feature isn't done
+`WebTestCase`; service-level tests extend `KernelTestCase`. A feature isn't done
 until it has a test that exercises it the way a caller would, an HTTP request for
 a controller or a service call for a service, not just "it didn't throw."
 

@@ -1,9 +1,11 @@
 <?php
 
-namespace Xver\SymfonyAuthBundle\Account\Application\Command;
+declare(strict_types=1);
 
-use Xver\SymfonyAuthBundle\Account\Domain\Account;
-use Xver\SymfonyAuthBundle\Account\Domain\AccountPersistenceInterface;
+namespace Xver\PhpAuthCoreBundle\Account\Application\Command;
+
+use Xver\PhpAuthCoreBundle\Account\Domain\Account;
+use Xver\PhpAuthCoreBundle\Account\Domain\AccountPersistenceInterface;
 
 /**
  * @api

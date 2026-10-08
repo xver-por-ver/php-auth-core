@@ -1,8 +1,9 @@
 <?php
 
-namespace Xver\SymfonyAuthBundle\Account\Domain;
+declare(strict_types=1);
 
-use InvalidArgumentException;
+namespace Xver\PhpAuthCoreBundle\Account\Domain;
+
 use Symfony\Component\Translation\TranslatableMessage;
 use Symfony\Component\Uid\Uuid;
 use Xver\PhpAppCoreBundle\Entity\Domain\EntityInterface;
@@ -55,7 +56,7 @@ class Account implements AccountInterface
     public function sameId(EntityInterface $otherEntity): bool
     {
         if (!$otherEntity instanceof Account) {
-            throw new InvalidArgumentException();
+            throw new \InvalidArgumentException();
         }
 
         return $this->getId()->equals($otherEntity->getId());
@@ -79,7 +80,7 @@ class Account implements AccountInterface
                 new TranslatableMessage(
                     'invalidEmail',
                     [],
-                    'SymfonyAuthBundle'
+                    'PhpAuthCoreBundle'
                 ),
                 'account.email'
             );
@@ -105,7 +106,7 @@ class Account implements AccountInterface
                     new TranslatableMessage(
                         'invalidUserRole',
                         [],
-                        'SymfonyAuthBundle'
+                        'PhpAuthCoreBundle'
                     ),
                     'account.role'
                 );
@@ -132,7 +133,7 @@ class Account implements AccountInterface
                 new TranslatableMessage(
                     'minPasswordLength',
                     ['limit' => self::PASSWORD_MIN_LENGTH],
-                    'SymfonyAuthBundle'
+                    'PhpAuthCoreBundle'
                 ),
                 'account.password'
             );
@@ -156,7 +157,7 @@ class Account implements AccountInterface
                 new TranslatableMessage(
                     'accountEmailExists',
                     [],
-                    'SymfonyAuthBundle'
+                    'PhpAuthCoreBundle'
                 ),
                 'account.email'
             );

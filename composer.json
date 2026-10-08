@@ -6,12 +6,12 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "Xver\\SymfonyAuthBundle\\": "src/"
+            "Xver\\PhpAuthCoreBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Xver\\SymfonyAuthBundle\\Tests\\": "tests/"
+            "Xver\\PhpAuthCoreBundle\\Tests\\": "tests/"
         }
     },
     "require": {
