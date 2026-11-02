@@ -90,7 +90,8 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-04-29T20:41:02+00:00"
+            "time": "2026-04-29T20:41:02+00:00",
+            "published-time": "2026-04-29T20:41:48+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -138,7 +139,8 @@
                 "issues": "https://github.com/doctrine/deprecations/issues",
                 "source": "https://github.com/doctrine/deprecations/tree/1.1.6"
             },
-            "time": "2026-02-07T07:09:04+00:00"
+            "time": "2026-02-07T07:09:04+00:00",
+            "published-time": "2026-02-07T07:10:09+00:00"
         },
         {
             "name": "psr/clock",
@@ -2066,7 +2068,8 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-09-25T15:46:47+00:00"
+            "time": "2026-09-25T15:46:47+00:00",
+            "published-time": "2026-09-30T10:23:43+00:00"
         },
         {
             "name": "symfony/polyfill-uuid",
@@ -3521,16 +3524,16 @@
         },
         {
             "name": "xver/php-app-core",
-            "version": "2.0.6",
+            "version": "2.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/xver-por-ver/php-app-core.git",
-                "reference": "0b7a83a315f8fd91ec3acd00aa3042745b84a4a7"
+                "reference": "1f2bde16c5571b969b2a753e8ef94d1437f68195"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xver-por-ver/php-app-core/zipball/0b7a83a315f8fd91ec3acd00aa3042745b84a4a7",
-                "reference": "0b7a83a315f8fd91ec3acd00aa3042745b84a4a7",
+                "url": "https://api.github.com/repos/xver-por-ver/php-app-core/zipball/1f2bde16c5571b969b2a753e8ef94d1437f68195",
+                "reference": "1f2bde16c5571b969b2a753e8ef94d1437f68195",
                 "shasum": ""
             },
             "require": {
@@ -3559,9 +3562,10 @@
             "description": "Provides a PHP skeleton for developing new apps",
             "support": {
                 "issues": "https://github.com/xver-por-ver/php-app-core/issues",
-                "source": "https://github.com/xver-por-ver/php-app-core/tree/2.0.6"
+                "source": "https://github.com/xver-por-ver/php-app-core/tree/2.0.7"
             },
-            "time": "2026-10-14T12:21:12+00:00"
+            "time": "2026-11-02T13:15:57+00:00",
+            "published-time": "2026-11-02T13:19:09+00:00"
         }
     ],
     "packages-dev": [
@@ -8177,7 +8181,8 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-09-23T22:01:09+00:00"
+            "time": "2026-09-23T22:01:09+00:00",
+            "published-time": "2026-09-30T10:23:33+00:00"
         },
         {
             "name": "symfony/routing",
@@ -8587,5 +8592,5 @@
         "php": "^8.5"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "plugin-api-version": "2.11.0"
 }
