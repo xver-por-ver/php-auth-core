@@ -3561,16 +3561,16 @@
         },
         {
             "name": "xver/php-app-core",
-            "version": "2.0.7",
+            "version": "2.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/xver-por-ver/php-app-core.git",
-                "reference": "1f2bde16c5571b969b2a753e8ef94d1437f68195"
+                "reference": "ec1e38f9fef5ad920e371114ab278acc047a5599"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xver-por-ver/php-app-core/zipball/1f2bde16c5571b969b2a753e8ef94d1437f68195",
-                "reference": "1f2bde16c5571b969b2a753e8ef94d1437f68195",
+                "url": "https://api.github.com/repos/xver-por-ver/php-app-core/zipball/ec1e38f9fef5ad920e371114ab278acc047a5599",
+                "reference": "ec1e38f9fef5ad920e371114ab278acc047a5599",
                 "shasum": ""
             },
             "require": {
@@ -3599,10 +3599,10 @@
             "description": "Provides a PHP skeleton for developing new apps",
             "support": {
                 "issues": "https://github.com/xver-por-ver/php-app-core/issues",
-                "source": "https://github.com/xver-por-ver/php-app-core/tree/2.0.7"
+                "source": "https://github.com/xver-por-ver/php-app-core/tree/2.0.8"
             },
-            "time": "2026-11-02T13:15:57+00:00",
-            "published-time": "2026-11-02T13:19:09+00:00"
+            "time": "2026-11-13T19:41:40+00:00",
+            "published-time": "2026-11-13T19:45:44+00:00"
         }
     ],
     "packages-dev": [
