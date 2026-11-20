@@ -31,7 +31,7 @@
         "symfony/http-kernel": "^8.1",
         "symfony/runtime": "^8.1",
         "symfony/yaml": "^8.1",
-        "vimeo/psalm": "^6.10"
+        "vimeo/psalm": "^7.0"
     },
     "config": {
         "sort-packages": true,
